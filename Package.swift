@@ -29,10 +29,16 @@ let package = Package(
         ),
         
         .target(
+            name: "ProtoBase",
+            dependencies: [
+                "ProtoDependencies"
+            ]
+        ),
+        
+        .target(
             name: "Protos",
             dependencies: [
-                "ProtoDependencies",
-                .product(name: "GRPC", package: "grpc-swift")
+                "ProtoBase"
             ]
         ),
         
