@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     
-    name: "Plane",
+    name: "Protos",
     
     platforms: [
         .macOS(.v10_15)
@@ -26,14 +26,14 @@ let package = Package(
             ]
         ),
         
-        .target(
-            name: "Plane",
-            dependencies: [
-                "Protos",
-                .product(name: "GRPC", package: "grpc-swift"),
-//                .product(name: "EC2", package: "AWSSDKSwift")
-            ]
-        )
+//        .target(
+//            name: "Plane",
+//            dependencies: [
+//                "Protos",
+//                .product(name: "GRPC", package: "grpc-swift"),
+////                .product(name: "EC2", package: "AWSSDKSwift")
+//            ]
+//        )
         
     ]
     
