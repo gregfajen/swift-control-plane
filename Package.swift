@@ -36,9 +36,23 @@ let package = Package(
         ),
         
         .target(
-            name: "Protos",
+            name: "ProtoMid",
             dependencies: [
                 "ProtoBase"
+            ]
+        ),
+        
+        .target(
+            name: "ProtoServices",
+            dependencies: [
+                "ProtoMid"
+            ]
+        ),
+        
+        .target(
+            name: "Protos",
+            dependencies: [
+                "ProtoServices"
             ]
         ),
         
