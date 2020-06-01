@@ -10,7 +10,8 @@ let package = Package(
     ],
     
     products: [
-        .library(name: "Plane", targets: ["Plane"])
+        .library(name: "Plane", targets: ["Plane"]),
+        .library(name: "Protos", targets: ["Protos"])
     ],
     
     dependencies: [
