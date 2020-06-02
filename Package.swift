@@ -59,7 +59,7 @@ let package = Package(
         .target(
             name: "Protos",
             dependencies: [
-                "ProtoBase"
+                "ProtoServices"
             ]
         ),
         
