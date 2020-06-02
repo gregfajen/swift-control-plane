@@ -35,24 +35,24 @@ let package = Package(
             ]
         ),
         
-        .target(
-            name: "ProtoMid",
-            dependencies: [
-                "ProtoBase"
-            ]
-        ),
-        
-        .target(
-            name: "ProtoServices",
-            dependencies: [
-                "ProtoMid"
-            ]
-        ),
+//        .target(
+//            name: "ProtoMid",
+//            dependencies: [
+//                "ProtoBase"
+//            ]
+//        ),
+//
+//        .target(
+//            name: "ProtoServices",
+//            dependencies: [
+//                "ProtoMid"
+//            ]
+//        ),
         
         .target(
             name: "Protos",
             dependencies: [
-                "ProtoServices"
+                "ProtoBase"
             ]
         ),
         
