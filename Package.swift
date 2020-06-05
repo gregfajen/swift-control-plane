@@ -48,11 +48,18 @@ let package = Package(
                 "ProtoMid"
             ]
         ),
+        
+        .target(
+            name: "ProtoNet",
+            dependencies: [
+                "ProtoExt"
+            ]
+        ),
 
         .target(
             name: "ProtoServices",
             dependencies: [
-                "ProtoExt"
+                "ProtoNet"
             ]
         ),
         
