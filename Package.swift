@@ -73,8 +73,7 @@ let package = Package(
         .target(
             name: "Plane",
             dependencies: [
-                "Protos",
-                .product(name: "GRPC", package: "grpc-swift")
+                "Protos"
             ]
         )
         
