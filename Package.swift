@@ -55,7 +55,7 @@ let package = Package(
                 "ProtoExt"
             ]
         ),
-
+        
         .target(
             name: "ProtoServices",
             dependencies: [
@@ -74,6 +74,9 @@ let package = Package(
             name: "Plane",
             dependencies: [
                 "Protos"
+            ],
+            swiftSettings: [
+                .unsafeFlags(["-cross-module-optimization"], .when(configuration: .release))
             ]
         )
         
